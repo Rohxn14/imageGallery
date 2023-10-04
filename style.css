@@ -1,0 +1,116 @@
+/* Background Color */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #1a1a1a; /* Dark gray background */
+    color: #fff; /* White text color */
+}
+
+/* Header Background Color */
+header {
+    background-color: #222; /* Dark background color */
+    padding: 20px 0;
+    text-align: center;
+}
+
+/* Heading Color */
+header h1 {
+    color: #ffc857; /* Mustard yellow */
+}
+
+/* Button Background Color */
+#prevBtn,
+#nextBtn {
+    background-color: #0074e4; /* Medium blue background */
+    color: #fff; /* White text color */
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    margin: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+}
+
+/* Button Hover Background Color */
+#prevBtn:hover,
+#nextBtn:hover {
+    background-color: #005cbf; /* Darker blue background on hover */
+}
+
+/* Carousel Container Background Color */
+.carousel-container {
+    overflow: hidden;
+    width: 100%;
+    margin: 20px auto;
+    background-color: #333; /* Dark background for the container */
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Carousel Track Background Color */
+.carousel-track {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+    overflow-x: scroll;
+    scroll-snap-type: x mandatory;
+    background-color: #222; /* Dark background for the track */
+}
+
+/* Carousel Item Background Color */
+.carousel-item {
+    flex: 0 0 auto;
+    width: 100%;
+    height: auto;
+    background-color: #333; /* Dark background color */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin: 10px;
+    border-radius: 10px;
+    scroll-snap-align: start;
+    transition: background-color 0.3s ease-in-out;
+}
+
+/* Item Information Background Color */
+.item-info {
+    margin-top: 10px;
+    background-color: #444; /* Darker gray background */
+    padding: 10px;
+    border-radius: 0 0 10px 10px;
+}
+
+/* Change item background color on hover */
+.carousel-item:hover {
+    background-color: #005cbf; /* Darker blue background on hover */
+}
+/* Carousel Arrows */
+.carousel-arrow {
+    background-color: transparent;
+    color: #0073e6; /* ChatGPT blue */
+    border: none;
+    border-radius: 50%;
+    padding: 10px;
+    font-size: 24px;
+    cursor: pointer;
+    transition: color 0.3s ease-in-out;
+}
+
+.carousel-arrow:hover {
+    color: #005cbf; /* Slightly darker blue on hover */
+}
+
+.prev-arrow {
+    position: absolute;
+    left: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.next-arrow {
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+}
